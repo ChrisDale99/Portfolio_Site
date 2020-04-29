@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Chris Dale">
+    <title>Portfolio Site</title>
+
+    <link href='Style.css' type="text/css" rel="stylesheet">
+
+    <!-- ADDING GOOGLE FONTS -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="#About Me">
+                        About Me</a></li>
+
+
+                <li><a href="#IDEO-SimpliSafe">
+                        My Work</a></li>
+
+
+                <li><a href="#Contact">
+                        Contact </a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h2 id="About Me"><u>About Me</u></h2>
+
+
+
+        <p>Hi i’m Chris Dale, </p>
+
+        <p>I am a web and front end developer. I am always trying to make a joke in life some good some aweful.
+            Sometimes in life you just have to have a break and have a kitkat. </p>
+
+        <p>Football fanatic and lover of movies.</p>
+
+        <img src="img/selfie.jpg" alt="Selfie" title="Selfie">
+
+        <h2>My Work </h2>
+
+        <p>This project was about creating a travle app. I chose to do about ten different football stadiums in Europe. For this I designed the layout, drew the illustrations by hand on paper and then created them digitally on illustrator. </p>
+
+        <div id="slideshow1" class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/app1.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/app2.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/app3.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1, slideshow1)"></span>
+                <span class="dot" onclick="currentSlide(2, slideshow1)"></span>
+                <span class="dot" onclick="currentSlide(3, slideshow1)"></span>
+            </div>
+        </div>
+        <br>
+
+
+        <p>This project was about creating a website essay on a designer or design company. I choose to do mine on IDEO and my Question was </p>
+
+        <p>“How IDEO changed home secruity”</p>
+
+
+
+        <img src="img/" alt="Selfie" title="Selfie">
+
+
+
+
+
+
+        <p>This project was to create 3 different movie posters in the minimalistic style of Josef Muller Brockmann. I drew them out first on paper and then created them digitally on Illustrator. I plan to add more to this casue I am a big fan of movies</p>
+
+
+
+
+
+
+
+        <div id="slideshow2" class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/poster1.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/poster2.png" height="400" width="400">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/poster3.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+            </div>
+        </div>
+        <br>
+
+
+        <script>
+            var slideshow1 = document.getElementById("slideshow1");
+            slideshow1.currentSlideIndex = 1;
+            showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+            var slideshow2 = document.getElementById("slideshow2");
+            slideshow2.currentSlideIndex = 1;
+            showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+
+            function plusSlides(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex += n, slideshow);
+            }
+
+            function currentSlide(n, slideshow) {
+                showSlides(slideshow.currentSlideIndex = n, slideshow);
+            }
+
+            function showSlides(n, slideshow) {
+
+
+
+                var i;
+                var slides = slideshow.getElementsByClassName("mySlides");
+                var dots = slideshow.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideshow.currentSlideIndex = 1
+                }
+                if (n < 1) {
+                    slideshow.currentSlideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideshow.currentSlideIndex - 1].style.display = "block";
+                dots[slideshow.currentSlideIndex - 1].className += " active";
+            }
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <footer>
+
+
+
+
+        <ul class="connections">
+            <li><a href="mailto:dalechris1999@gmail.com" title="Send me an email">
+                    <svg width="36" height="36" viewBox="0 0 36 36">
+                        <g></g>
+                        <path d="M17.902 1.699c-8.949 0-16.203 7.254-16.203 16.203s7.254 16.203 16.203 16.203c8.949 0 16.203-7.254 16.203-16.203 0-8.949-7.254-16.203-16.203-16.203zM9.168 11.487h17.371c0.99 0 1.794 0.699 1.878 1.588l-10.599 4.53-10.532-4.501c0.069-0.903 0.88-1.618 1.881-1.618zM28.434 23.494c0 0.961-0.848 1.739-1.895 1.739h-17.371c-1.047 0-1.895-0.778-1.895-1.739v-9.566l10.558 4.511 0.008-0.013 10.595-4.529v9.597z" fill="blacx" />
+                    </svg>
+                </a>
+            </li>
+
+            <li><a href="https://chrisdaleixd.tumblr.com/" title="Tumblr">
+                    <svg width="36" height="36" viewBox="0 0 36 36">
+                        <g></g>
+                        <path d="M17.9,1.7A16.2,16.2,0,1,0,34.1,17.9,16.2,16.2,0,0,0,17.9,1.7Zm3.73,15.9H18.79v2.6a5,5,0,0,0,.06,1.23,1.06,1.06,0,0,0,.43.49,1.65,1.65,0,0,0,.86.23,2.34,2.34,0,0,0,1.49-.45v1.71a7,7,0,0,1-1.31.45,5.61,5.61,0,0,1-1.27.14,3.43,3.43,0,0,1-1.22-.2,2.91,2.91,0,0,1-1-.56,1.93,1.93,0,0,1-.59-.78,3.33,3.33,0,0,1-.16-1.19v-4H14.53V15.68a4,4,0,0,0,1.26-.63,2.94,2.94,0,0,0,.76-1A4.32,4.32,0,0,0,17,12.63h1.83v2.84h2.84V17.6Z" transform="translate(-1.7 -1.7)" fill="black" />
+                    </svg>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </footer>
+
+
+
+</body>
+
+</html>

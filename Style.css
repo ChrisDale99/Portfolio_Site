@@ -1,0 +1,475 @@
+/*----- CSS Reset -----*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    line-height: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {box-sizing:border-box}
+
+
+/*----- Slideshow -----*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: #FBDE44;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #FBDE44;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FBDE44;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*----- NAVIGATION ----*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3%;
+    width: 100%;
+    background-color: black;
+    padding: 1em 0;
+    font-size: 2em;
+    box-shadow: 0 0 10px 0 red;
+}
+}
+
+nav ul {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav a:link {
+    color: white;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+/*----- Main body styling ------*/
+
+.container {
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    color: black;
+    margin-bottom: 1em;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+}
+
+
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    
+}
+
+header h1 {
+    margin-top: 0.7em;
+    font-size: 100px;
+    color: white;
+    font-style: normal;
+   
+}
+
+header h2 {
+    margin-top: 1em;
+    font-size: 60px;
+    color: white;
+    font-style: normal;
+
+}
+
+header h3 {
+    margin-top: 0.5em;
+    font-size: 20px;
+    text-decoration: underline;
+    color: white;
+    font-style: normal;
+    
+}
+
+header p {
+    margin-top: 2em;
+    color: white;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    min-height: 100px;
+    font-size: 100%;
+    line-height: 4em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.biblio p {
+    color: white;
+    margin: 0;
+    max-width: 100%;
+    background-color: black;
+    min-height: 100px;
+    font-size: 100%;
+    line-height: 1em;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.biblio h2 {
+    color: white;
+    margin: 0;
+    max-width: 100%;
+    background-color: black;
+    min-height: 100px;
+    font-size: 30px;
+    line-height: 4em;
+    text-align: center;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+
+
+/*----- TYPOGRAPHY -----*/
+
+
+}
+
+h1,
+h2,
+h3 {
+
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    color: white;
+
+}
+
+h2 {
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+    padding-top: 95px;
+
+}
+
+
+
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+
+
+}
+
+h1 {
+    font-size: 5em;
+    margin-top: 0em;
+    margin-bottom: 0.1em;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.999em;
+    margin: 1em 0 1em 0;
+}
+
+h3 {
+    font-size: 1.414em;
+    margin: 1.5em 0;
+}
+
+
+
+
+header,
+h3 {
+    font-style: italic;
+}
+
+.intro {
+    font-size: 1.3em;
+    line-height: 1.3em;
+
+}
+
+.leader {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: white;
+}
+
+/*----- STYLING LINKS -----*/
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: black;
+    border-bottom: 1px dotted;
+}
+
+
+
+/*----- IMAGES -----*/
+
+.img2 img {
+    display: inherit;
+    margin: 0em 0em 0em 0em;
+    max-width: 100%;
+    height: 30px;
+    width: 50px;
+}
+
+.img3 img {
+    display: inherit;
+    margin: 3em auto;
+    max-width: 150%;
+    height: 300px;
+    width: 400px;
+
+}
+
+.img2 a:hover {
+    color: red;
+}
+
+.img2 a:link {
+    color: red;
+}
+
+
+img {
+    display: inline;
+    margin: 3em auto;
+    max-width: 150%;
+    height: 300px;
+    width: 300px;
+}
+
+.simplisafe_product img {
+    display: inherit;
+    margin: 3em auto;
+    max-width: 150%;
+    height: 500px;
+    width: 700px;
+}
+
+.simplisafe_product2 img {
+    display: inherit;
+    margin: 3em auto;
+    max-width: 150%;
+    height: 366px;
+    width: 740px;
+}
+
+.grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 9em;
+    margin: 0em;
+    background-color: #FBDE44;
+}
+
+.grid2 {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin: 0 2em;
+
+}
+
+.ul li {
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    padding-left: 5px;
+    line-height: 1.5em;
+    text-indent: 50px;
+}
+
+/*-------------------- FOOTER ---------------------*/
+
+footer {
+    text-align: center;
+    font-size: 0.707em;
+    padding: 2em 0 4em 0;
+    margin: auto;
+    margin-top: 18em;
+    background-color:#FBDE44; 
+}
+
+
+.connections {
+    position: relative;
+    margin: 0 auto;
+    text-align: center
+}
+
+.connections ul {
+    margin: 0;
+    padding: 0;
+}
+
+.connections li {
+    margin: 0 15px;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.connections a:link {
+    border-bottom: none;
+}
+
+.connections img,
+.connections svg {
+    border: none;
+}
+
+.connections a:hover img,
+.connections a:hover svg {
+    border-bottom: none;
+}
+
+.connections svg {
+    margin: 2em auto;
+}
+
+.connections a:hover svg path {
+    fill: grey;
+    transition: all 0.2s ease-in-out;
+}
+
+.connections .tumblr a:hover svg path {
+    fill: #34526f;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    nav {
+        font-size: 3em;
+
+    }
+
+    .container {
+        width: 50%
+    }
+
+}
