@@ -96,34 +96,53 @@
 
         <p>“How IDEO changed home secruity”</p>
 
-
-
-        <img src="img/" alt="Selfie" title="Selfie">
-
-
-
-
-
-
-        <p>This project was to create 3 different movie posters in the minimalistic style of Josef Muller Brockmann. I drew them out first on paper and then created them digitally on Illustrator. I plan to add more to this casue I am a big fan of movies</p>
-
-
-
-
-
-
-
+        
         <div id="slideshow2" class="slideshow-container">
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="img/poster1.png" style="width:100%" style="height:100%" >
+                <img src="img/Artboard%201%202.png" style="width:100%" style="height:500%"  >
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="img/poster2.png" height="100%" width="4000">
+                <img src="img/Artboard%202%202.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/Artboard%203%202.png" style="width:100%" style="height:100%" >
+                <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1,slideshow2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+            </div>
+        </div>
+        <br>
+
+        <p>This project was to create 3 different movie posters in the minimalistic style of Josef Muller Brockmann. I drew them out first on paper and then created them digitally on Illustrator. I plan to add more to this casue I am a big fan of movies</p>
+
+
+        <div id="slideshow3" class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/poster1.png" style="width:100%" style="height:500%"  >
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/poster2.png" style="width:100%" style="height:100%" >
                 <div class="text">Caption Two</div>
             </div>
 
@@ -133,14 +152,14 @@
                 <div class="text">Caption Three</div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1, this.parentNode)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, this.parentNode)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
 
 
             <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1, slideshow2)"></span>
-                <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
-                <span class="dot" onclick="currentSlide(3, slideshow2)"></span>
+                <span class="dot" onclick="currentSlide(1, slideshow3)"></span>
+                <span class="dot" onclick="currentSlide(2, slideshow3)"></span>
+                <span class="dot" onclick="currentSlide(3, slideshow3)"></span>
             </div>
         </div>
         <br>
@@ -154,6 +173,10 @@
             var slideshow2 = document.getElementById("slideshow2");
             slideshow2.currentSlideIndex = 1;
             showSlides(slideshow2.currentSlideIndex, slideshow2);
+            
+            var slideshow3 = document.getElementById("slideshow3");
+            slideshow3.currentSlideIndex = 1;
+            showSlides(slideshow3.currentSlideIndex, slideshow3);
 
 
             function plusSlides(n, slideshow) {
