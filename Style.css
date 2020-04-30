@@ -324,30 +324,6 @@ a:hover {
 
 /*----- IMAGES -----*/
 
-.img2 img {
-    display: inherit;
-    margin: 0em 0em 0em 0em;
-    max-width: 100%;
-    height: 30px;
-    width: 50px;
-}
-
-.img3 img {
-    display: inherit;
-    margin: 3em auto;
-    max-width: 150%;
-    height: 300px;
-    width: 400px;
-
-}
-
-.img2 a:hover {
-    color: red;
-}
-
-.img2 a:link {
-    color: red;
-}
 
 
 img {
@@ -358,21 +334,7 @@ img {
     width: 300px;
 }
 
-.simplisafe_product img {
-    display: inherit;
-    margin: 3em auto;
-    max-width: 150%;
-    height: 500px;
-    width: 700px;
-}
 
-.simplisafe_product2 img {
-    display: inherit;
-    margin: 3em auto;
-    max-width: 150%;
-    height: 366px;
-    width: 740px;
-}
 
 .grid {
     display: grid;
